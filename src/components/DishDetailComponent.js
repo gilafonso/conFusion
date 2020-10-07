@@ -10,7 +10,7 @@ class DishDetail extends Component {
                     <p>{comment.comment}</p>
                     <p>-- {comment.author},
                     &nbsp;
-                    {new Intl.DateTimeFormat('pt-BR', {
+                    {new Intl.DateTimeFormat('en-US', {
                         day: '2-digit',
                         month: 'long',
                         year: 'numeric'
@@ -58,9 +58,11 @@ class DishDetail extends Component {
         const dishId = this.renderDish(dish)
         const commentDish = this.renderComments(dish.comments)
         return (
-            <div className='row'>
-                {dishId}
-                {commentDish}
+            <div className="container">
+                <div className="row">
+                    {dishId}
+                    {commentDish}
+                </div>
             </div>
         )
     }
