@@ -83,8 +83,6 @@ import { FadeTransform, Fade, Stagger } from 'react-animation-components';
         if (dish == null) {
             return (<div></div>)
         }
-        const dishId = <RenderDish dish={props.dish} />
-        const commentDish = <RenderComments comments={props.dish.comments}/>
         return (
             <div className="container">
                 <div className="row">
